@@ -1,0 +1,1 @@
+# checkroom-plugin-opensettings
