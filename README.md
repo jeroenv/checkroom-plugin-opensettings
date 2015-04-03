@@ -22,7 +22,7 @@ phonegap local plugin add https://github.com/jeroenv/checkroom-plugin-opensettin
 ## Usage
 
 ```js
-window.plugins.openSettingsPlugin.show(options, function(date){
-	alert("date result " + date);  
+window.plugins.openSettingsPlugin.show(options, function(){
+	console.log("openSettingsPlugin success");  
 });
 ```
