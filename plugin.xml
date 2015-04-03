@@ -3,7 +3,7 @@
     
     <name>OpenSettingsPlugin</name>
     
-    <DESCRIPTION>Cordova open native settings plugin for iOS and Android</DESCRIPTION>
+    <description>Cordova open native settings plugin for iOS and Android</description>
 
     <license>MIT</license>
 
