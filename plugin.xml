@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.checkroom.plugin.opensettings" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <name>OpenSettingsPlugin</name>
+    
+    <DESCRIPTION>Cordova open native settings plugin for iOS and Android</DESCRIPTION>
+
+    <license>MIT</license>
+
+    <js-module name="checkroom-plugin-opensettings" src="www/OpenSettingsPlugin.js">
+        <clobbers target="openSettingsPlugin" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="OpenSettingsPlugin">
+                <param name="android-package" value="com.checkroom.plugin.opensettings.OpenSettingsPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/OpenSettingsPlugin.java" target-dir="src/com/checkroom/plugin/opensettings" />        
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+		<feature name="OpenSettingsPlugin">
+			<param name="ios-package" value="OpenSettingsPlugin"/>
+		</feature>
+        </config-file>
+	    <header-file src="src/ios/OpenSettingsPlugin.h" />
+	    <source-file src="src/ios/OpenSettingsPlugin.m" />
+    </platform>
+</plugin>
