@@ -3,8 +3,8 @@ var exec = require('cordova/exec');
 function OpenSettingsPlugin() {
 }
 
-OpenSettingsPlugin.prototype.open = function(callback){
-  	exec(callback, null, "OpenSettingsPlugin", "open", []);
+OpenSettingsPlugin.prototype.open = function(success, fail){
+  	exec(success, fail, "OpenSettingsPlugin", "open", []);
 }
 
 var openSettingsPlugin = new OpenSettingsPlugin();
